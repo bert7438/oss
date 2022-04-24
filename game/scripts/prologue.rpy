@@ -51,5 +51,5 @@ label opening:
     centered "{cps=8}Obschaga Entertainment{p=1} представляет...{w=3}{/cps}"
     $ renpy.pause(2.0, hard=True)
     centered "{cps=8}ВЫЖИВАНИЕ ОРЕНБУРГСКОГО СТУДЕНТА{/cps}"
-
+    jump day1_arrival
     return
