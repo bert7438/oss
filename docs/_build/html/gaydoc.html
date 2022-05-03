@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Чуть более техническая документация &mdash; Visual novel 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Visual novel
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Чуть более техническая документация</a><ul>
+<li><a class="reference internal" href="#script-rpy">Script.rpy</a><ul>
+<li><a class="reference internal" href="#label-start">label start</a></li>
+<li><a class="reference internal" href="#label-choose-name">label choose_name</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#prologue-rpy">Prologue.rpy</a></li>
+<li><a class="reference internal" href="#day1-rpy">Day1.rpy</a></li>
+<li><a class="reference internal" href="#gui-rpy">Gui.rpy</a></li>
+<li><a class="reference internal" href="#options-rpy">Options.rpy</a></li>
+<li><a class="reference internal" href="#screens-rpy">Screens.rpy</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Visual novel</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Чуть более техническая документация</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/gaydoc.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="gaydoc">
+<span id="id1"></span><h1>Чуть более техническая документация<a class="headerlink" href="#gaydoc" title="Permalink to this headline"></a></h1>
+<p>А здесть мы чуть глубже закопаемся в суть скриптов проекта. Хотя я бы на вашем месте просто открыл проект и почитал достаточно подробные комментарии, написанные тимлидом.</p>
+<section id="script-rpy">
+<h2>Script.rpy<a class="headerlink" href="#script-rpy" title="Permalink to this headline"></a></h2>
+<p>Здесь производятся все приготовления перед началом прохождения.</p>
+<section id="label-start">
+<h3>label start<a class="headerlink" href="#label-start" title="Permalink to this headline"></a></h3>
+<p>Начальная заставка проекта.</p>
+</section>
+<section id="label-choose-name">
+<h3>label choose_name<a class="headerlink" href="#label-choose-name" title="Permalink to this headline"></a></h3>
+<p>Здесь игрок выбирает имя своего персонажа, после чего переходит к прологу, описанному в <em>prologue.rpy</em></p>
+</section>
+</section>
+<section id="prologue-rpy">
+<h2>Prologue.rpy<a class="headerlink" href="#prologue-rpy" title="Permalink to this headline"></a></h2>
+<p>На данном этапе содержит 4 линейных лейбла, ведущих в первому дню:</p>
+<ul class="simple">
+<li><p>prologue</p></li>
+<li><p>prol_dream</p></li>
+<li><p>prol_train</p></li>
+<li><p>opening</p></li>
+</ul>
+</section>
+<section id="day1-rpy">
+<h2>Day1.rpy<a class="headerlink" href="#day1-rpy" title="Permalink to this headline"></a></h2>
+<p>Мда…</p>
+<p>Лейбл <em>day1_arrival</em> на данный момент является последним в сценарии и не содержит ничего, требующего документирования.</p>
+</section>
+<section id="gui-rpy">
+<h2>Gui.rpy<a class="headerlink" href="#gui-rpy" title="Permalink to this headline"></a></h2>
+<p>В данном скрипте определяются основыные параметры графического интерфейса, такие как:</p>
+<ul class="simple">
+<li><p>Цвета и размеры шрифтов</p></li>
+<li><p>Стили кнопок</p></li>
+<li><p>Размеры окон</p></li>
+<li><p>Стили текста</p></li>
+</ul>
+<p>Ну, вы поняли.</p>
+</section>
+<section id="options-rpy">
+<h2>Options.rpy<a class="headerlink" href="#options-rpy" title="Permalink to this headline"></a></h2>
+<p>Еще один обильно прокомментированный файл. В нем производится настройка основных параметров приложения, например, пути для сохраниения игровых файлов.</p>
+</section>
+<section id="screens-rpy">
+<h2>Screens.rpy<a class="headerlink" href="#screens-rpy" title="Permalink to this headline"></a></h2>
+<p>А здесь у нас описываются игровые экраны - слои интерфейса, которые игрок видит во время игры.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Obshaga.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
